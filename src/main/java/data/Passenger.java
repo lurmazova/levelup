@@ -1,10 +1,12 @@
 package data;
 
-import com.google.gson.Gson;
-
-import java.util.Date;
-
 public class Passenger {
+    public Passenger(String firstName, String lastName, String bDate, String passNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.bDate = bDate;
+        this.passNumber = passNumber;
+    }
 
     public String firstName;
     public String lastName;

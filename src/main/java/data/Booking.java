@@ -1,12 +1,16 @@
 package data;
 
-import com.google.gson.Gson;
-
 public class Booking {
 
     public String flightNumber;
     public String bookingNumber;
     public String flightDateTime;
+
+    public Booking(String flightNumber, String bookingNumber, String flightDateTime) {
+        this.flightNumber = flightNumber;
+        this.bookingNumber = bookingNumber;
+        this.flightDateTime = flightDateTime;
+    }
 
     public String getFlightDateTime() {
         return flightDateTime;
