@@ -1,6 +1,7 @@
 package utils;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
 import data.Booking;
 import data.Passenger;
 
@@ -12,7 +13,8 @@ public class JsonWriter {
     public JsonWriter() throws IOException {
     }
 
-    public void booking2Json(String flightNumber, String flightDateTime, String bookingNumber) throws IOException {
+    public void booking2Json(String flightNumber, String flightDateTime, String bookingNumber) {
+        try {
             String filePath = RESOURCE_PATH + BOOKING_JSON_NAME;
 
             Booking booking = new Booking(flightNumber, bookingNumber, flightDateTime);
@@ -25,9 +27,15 @@ public class JsonWriter {
             Gson gson = new Gson();
             gson.toJson(booking, fileWriter);
             fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JsonIOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void passenger2Json(String firstName, String lastName, String bDate, String passNumber) throws IOException {
+    public void passenger2Json(String firstName, String lastName, String bDate, String passNumber) {
+        try {
             String filePath = RESOURCE_PATH + PASSENGER_JSON_NAME;
 
             Passenger passenger = new Passenger(firstName, lastName, bDate, passNumber);
@@ -42,6 +50,11 @@ public class JsonWriter {
             gson.toJson(passenger, fileWriter);
             fileWriter.close();
             System.out.println(gson.toJson(passenger));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JsonIOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void createFileIfNotExists(String filePath) throws IOException {
