@@ -8,6 +8,7 @@ import data.Passenger;
 import java.io.*;
 
 import static utils.Constants.*;
+import static utils.FileManager.createFileIfNotExists;
 
 public class JsonWriter {
     public JsonWriter() {
@@ -47,10 +48,6 @@ public class JsonWriter {
         }
     }
 
-    private void createFileIfNotExists(String filePath) throws IOException {
-        File file = new File(filePath);
-        if (!file.exists()) file.createNewFile();
-    }
 
     public void bookingFromJson() throws FileNotFoundException {
         Gson gson = new Gson();
