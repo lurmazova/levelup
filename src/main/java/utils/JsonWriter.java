@@ -10,11 +10,10 @@ import java.io.*;
 import static utils.Constants.*;
 
 public class JsonWriter {
-    public JsonWriter() throws IOException {
+    public JsonWriter() {
     }
 
-    public void booking2Json(String flightNumber, String flightDateTime, String bookingNumber) {
-        try {
+    public String booking2Json(String flightNumber, String flightDateTime, String bookingNumber) {
             String filePath = RESOURCE_PATH + BOOKING_JSON_NAME;
 
             Booking booking = new Booking(flightNumber, bookingNumber, flightDateTime);
@@ -22,16 +21,9 @@ public class JsonWriter {
             booking.setFlightDateTime(flightDateTime);
             booking.setBookingNumber(bookingNumber);
 
-            createFileIfNotExists(filePath);
-            FileWriter fileWriter = new FileWriter(filePath);
             Gson gson = new Gson();
-            gson.toJson(booking, fileWriter);
-            fileWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JsonIOException e) {
-            e.printStackTrace();
-        }
+            return gson.toJson(booking);
+
     }
 
     public void passenger2Json(String firstName, String lastName, String bDate, String passNumber) {
@@ -51,8 +43,6 @@ public class JsonWriter {
             fileWriter.close();
             System.out.println(gson.toJson(passenger));
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JsonIOException e) {
             e.printStackTrace();
         }
     }
