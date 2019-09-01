@@ -9,4 +9,6 @@ public class Constants {
     public final static String PASSENGER_JSON_NAME = "passenger.json";
     public static final String BOOKING_MULTIPLE_THREADS_NAME = "booking_threads.txt";
 
+    public static final int SERVER_PORT = 8080;
+
 }
