@@ -3,14 +3,14 @@ package client_server;
 import java.io.*;
 import java.net.Socket;
 
-public class ChatClientNew {
+public class ChatClient {
     final Socket socket;
     final BufferedReader socketReader;
     final BufferedWriter socketWriter;
     final BufferedReader userInput;
 
 
-    public ChatClientNew(String host, int port) throws IOException {
+    public ChatClient(String host, int port) throws IOException {
         socket = new Socket(host, port);
         socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         socketWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
@@ -49,7 +49,7 @@ public class ChatClientNew {
 
     public static void main(String[] args)  {
         try {
-            new ChatClientNew("localhost", 8080).run();
+            new ChatClient("localhost", 8080).run();
         } catch (IOException e) {
             System.out.println("Unable to connect. Server not running?");
         }

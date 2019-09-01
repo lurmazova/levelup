@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class ChatServerNew {
+public class ChatServer {
     public int port;
     public ServerSocket serverSocket;
     public Thread serverThread;
     ArrayList<Thread> threads = new ArrayList<>();
     BlockingQueue<SocketProcessor> q = new LinkedBlockingQueue<SocketProcessor>();
 
-    public ChatServerNew(int port) throws IOException {
+    public ChatServer(int port) throws IOException {
         this.port = port;
         serverSocket = new ServerSocket(port);
     }
@@ -104,7 +104,7 @@ public class ChatServerNew {
     }
 
     public static void main(String[] args) throws IOException {
-        new ChatServerNew(8080).run();
+        new ChatServer(8080).run();
     }
 }
 
