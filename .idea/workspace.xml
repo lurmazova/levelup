@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a55abc5-f2ea-44e6-aa23-e39674bea3ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client_server/ChatClientNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client_server/ChatServerNew.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_190.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client_server/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client_server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/database/dbRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/levelup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/levelup.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client_server/ChatClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client_server/ChatServer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/Passenger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/multithreading/ThreadsMaker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/multithreading/ThreadsMaker$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/multithreading/ThreadsMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/multithreading/ThreadsMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/results/booking_threads.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/results/booking_threads.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/ChatClientNew$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/ChatClientNew$Receiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/ChatClientNew.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/ChatServerNew$SocketProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/ChatServerNew.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/JsonWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/JsonWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/StringRandomizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/StringRandomizer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +34,8 @@
       <file leaf-file-name="ThreadsMaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/multithreading/ThreadsMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="48" />
+            <state relative-caret-position="-137">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +46,8 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="210">
+              <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -60,24 +61,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatServerNew.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatServerNew.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="95" column="47" lean-forward="true" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+            <state relative-caret-position="450">
+              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#450#467#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatClientNew.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatClientNew.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="15" column="92" lean-forward="true" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
+            <state relative-caret-position="355">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="676">
+              <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/database/dbRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,28 +150,34 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/FileManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/results/passenger.json" />
         <option value="$PROJECT_DIR$/src/main/java/utils/JsonWriter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/utils/StringRandomizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/multithreading/MyThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/multithreading/ThreadsMaker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client_server/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client_server/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/ReadThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/UserThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client_server/ChatServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/WriteThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client_server/ChatClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/SocketProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/ChatClientNew.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/ChatServerNew.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client_server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client_server/ChatClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client_server/ChatServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client_server/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/client_server/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/DbTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/JavaSeH2Memory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/dbRunner.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="811" />
+    <option name="width" value="80" />
+    <option name="height" value="22" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -146,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,7 +232,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="multithreading" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
@@ -211,19 +265,24 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -242,9 +301,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChatClientNew">
-    <configuration name="ChatClientNew" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client_server.ChatClientNew" />
+  <component name="RunManager" selected="Application.dbRunner">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client_server.Client" />
       <module name="levelup" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -254,10 +313,32 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ChatServerNew" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client_server.ChatServerNew" />
+    <configuration name="DatabaseManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="database.DatabaseManager" />
       <module name="levelup" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="JavaSeH2Memory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="database.JavaSeH2Memory" />
+      <module name="levelup" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client_server.Server" />
+      <module name="levelup" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="client_server.*" />
@@ -267,6 +348,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="dbRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="database.dbRunner" />
+      <module name="levelup" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -307,13 +399,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ChatServerNew" />
-      <item itemvalue="Application.ChatClientNew" />
+      <item itemvalue="Application.ChatClient" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.JavaSeH2Memory" />
+      <item itemvalue="Application.DatabaseManager" />
+      <item itemvalue="Application.dbRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChatClientNew" />
-        <item itemvalue="Application.ChatServerNew" />
+        <item itemvalue="Application.dbRunner" />
+        <item itemvalue="Application.JavaSeH2Memory" />
+        <item itemvalue="Application.DatabaseManager" />
+        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -337,26 +435,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="820" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32780084" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25726143" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
       <window_info anchor="right" id="Perfecto Dashboard" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27878788" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3383405" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2033195" />
       <window_info anchor="right" id="Perfecto Lab" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39834026" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -396,11 +495,36 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/database/DatabaseManager.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="24" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="statement" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>statement</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>statement.getWarnings()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>this.getUserName()</expression-string>
         <language-id>JAVA</language-id>
@@ -409,6 +533,57 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/multithreading/ThreadsMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="47" column="32" lean-forward="true" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/Booking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -516,28 +691,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/multithreading/MyThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/results/booking_threads.txt1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/results/booking_threads.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/multithreading/MyThread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/StringRandomizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/resultspassenger.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/results/passenger.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -546,17 +706,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatClient" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="698" column="29" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/UserThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ReadThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/WriteThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        <state relative-caret-position="250">
+          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/SocketProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="91" lean-forward="true" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/multithreading/ThreadsMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" lean-forward="true" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -565,143 +789,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="76" lean-forward="true" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+        <state relative-caret-position="450">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatClient">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="5" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="210">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/multithreading/ThreadsMaker.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="48" />
+        <state relative-caret-position="-2325">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/JavaSeH2Memory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="698" column="29" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
+        <state relative-caret-position="355">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/UserThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DatabaseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ReadThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        <state relative-caret-position="676">
+          <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/WriteThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/dbRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="34" column="58" lean-forward="true" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1734#1735#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/SocketProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatClientNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="15" column="92" lean-forward="true" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/ChatServerNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="95" column="47" lean-forward="true" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#467#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,8 +851,33 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.h2database:h2:1.4.190</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -732,6 +899,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>levelup</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -746,6 +926,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.h2database:h2:1.4.190</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
