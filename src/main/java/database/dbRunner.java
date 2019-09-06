@@ -1,7 +1,7 @@
 package database;
 
-        import java.sql.SQLException;
-        import java.util.LinkedHashMap;
+import java.sql.SQLException;
+import java.util.LinkedHashMap;
 
 public class dbRunner {
     public static void main(String[] args) throws SQLException {

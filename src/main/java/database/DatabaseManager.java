@@ -19,7 +19,7 @@ public class DatabaseManager {
     }
 
 
-    public void createTable() throws SQLException {
+    public void createTable() {
         try {
             Statement statement = connection.createStatement();
             statement.execute("CREATE TABLE IF NOT EXISTS " + this.tableName +
