@@ -1,7 +1,7 @@
 package database;
 
-import java.sql.SQLException;
-import java.util.LinkedHashMap;
+        import java.sql.SQLException;
+        import java.util.LinkedHashMap;
 
 public class dbRunner {
     public static void main(String[] args) throws SQLException {
@@ -12,7 +12,7 @@ public class dbRunner {
         DatabaseManager databaseManager = new DatabaseManager("Messages", fieldsToValues, "blabla");
         databaseManager.createTable();
         databaseManager.insertIntoMessagesTable();
-        databaseManager.searchInMessages("THREADS", "T1");
+        databaseManager.searchInMessages("CLIENT_NAME", "C1");
         databaseManager.closeConnection();
     }
 }
