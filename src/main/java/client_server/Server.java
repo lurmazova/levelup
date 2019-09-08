@@ -4,9 +4,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
-import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -70,7 +68,6 @@ public class Server {
                     message = reader.readLine();
                     String clientFullMessage = "Client(" + userId + "):" + message + "\n";
                     System.out.print(clientFullMessage);
-
                     for(Socket curClient : clientsConnected) {
                         OutputStream os = curClient.getOutputStream();
                         OutputStreamWriter osw = new OutputStreamWriter(os);
