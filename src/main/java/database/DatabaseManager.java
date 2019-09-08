@@ -86,7 +86,7 @@ public class DatabaseManager {
     }
 
     public void closeConnection() throws SQLException {
-        connection.close();
+        if(!connection.isClosed()) connection.close();
     }
 
     private void checkSQLWarnings(Statement statement) throws SQLException {
