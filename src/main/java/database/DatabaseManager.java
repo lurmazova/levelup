@@ -12,8 +12,7 @@ public class DatabaseManager {
     Connection connection = DriverManager.getConnection(DB_URL);
 
     public DatabaseManager(String tableName,
-                           LinkedHashMap<String, String> fieldsToValues,
-                           String searchTerm) throws SQLException {
+                           LinkedHashMap<String, String> fieldsToValues) throws SQLException {
         this.tableName = tableName;
         this.fieldsToValues = fieldsToValues;
     }

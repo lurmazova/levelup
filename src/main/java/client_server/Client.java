@@ -2,10 +2,12 @@ package client_server;
 
 import java.io.*;
 import java.net.*;
+import java.util.Iterator;
 
 import static utils.Constants.SERVER_PORT;
 
 public class Client {
+
     public static void main(String args[]) throws Exception
     {
         Socket socket = new Socket("127.0.0.1",SERVER_PORT);
@@ -13,8 +15,7 @@ public class Client {
         PrintStream printStream = new PrintStream(socket.getOutputStream());
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
         String message;
-        while (true)
-        {
+        while (true) {
             System.out.print("Client: ");
             message = stdin.readLine();
             printStream.println(message);

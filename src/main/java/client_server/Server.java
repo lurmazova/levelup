@@ -1,12 +1,12 @@
 package client_server;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
+import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -20,6 +20,7 @@ public class Server {
     Socket client = null;
     ExecutorService pool;
     int clientcount = 0;
+    ArrayList<Socket> clientsConnected = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         Server serverobj = new Server(SERVER_PORT);
@@ -27,25 +28,24 @@ public class Server {
     }
 
     Server (int port) {
-        this.port =  port;
+        this.port = port;
         pool = Executors.newFixedThreadPool(THREADS_COUNT);
     }
 
     public void startServer() throws IOException {
 
-        server=new ServerSocket(SERVER_PORT);
+        server = new ServerSocket(SERVER_PORT);
         System.out.println("Server started");
-        while (true)
-        {
+        while (true) {
             client = server.accept();
             clientcount++;
-            ServerThread runnable= new ServerThread(client, clientcount,this);
+            clientsConnected.add(client);
+            ServerThread runnable = new ServerThread(client, clientcount,this);
             pool.submit(runnable);
         }
-
     }
 
-    private static class ServerThread implements Runnable {
+    private class ServerThread implements Runnable {
         Server server;
         Socket client;
         BufferedReader reader;
@@ -66,25 +66,32 @@ public class Server {
         @Override
         public void run() {
             try {
-                while(true){
+                while(true) {
                     message = reader.readLine();
+                    String clientFullMessage = "Client(" + userId + "):" + message + "\n";
+                    System.out.print(clientFullMessage);
 
-                    System.out.print("Client(" + userId + "):" + message + "\n");
-                    System.out.print("Server: ");
+                    for(Socket curClient : clientsConnected) {
+                        OutputStream os = curClient.getOutputStream();
+                        OutputStreamWriter osw = new OutputStreamWriter(os);
+                        BufferedWriter bw = new BufferedWriter(osw);
+                        bw.write(clientFullMessage);
+                        bw.flush();
+                    }
+
                     message = scanner.nextLine();
-                    if (message.equalsIgnoreCase("bye"))
-                    {
+                    if (message.equalsIgnoreCase("bye")) {
                         stream.println("BYE");
                         System.out.println("Connection ended by server");
                         break;
                     }
-                    stream.println(message);
+
                 }
                 reader.close();
                 client.close();
                 stream.close();
             }
-            catch(IOException ex){
+            catch(IOException ex) {
                 ex.printStackTrace();
             }
         }
