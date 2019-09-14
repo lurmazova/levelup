@@ -1,5 +1,6 @@
 package database;
 import com.sun.tools.javac.util.Assert;
+import utils.Constants;
 
 import java.sql.*;
 import java.util.LinkedHashMap;
@@ -17,19 +18,27 @@ public class DatabaseManager {
         this.fieldsToValues = fieldsToValues;
     }
 
+    public DatabaseManager(String tableName) throws SQLException {
+        this.tableName = tableName;
+    }
 
     public void createTable() {
         try {
             Statement statement = connection.createStatement();
-            statement.execute("CREATE TABLE IF NOT EXISTS " + this.tableName +
+            statement.execute("CREATE TABLE IF NOT EXISTS " + Constants.TABLE_NAME +
                     " (ID INT auto_increment, " +
-                    "THREAD_NUMBER VARCHAR(50) NOT NULL, " +
-                    "CLIENT_NAME VARCHAR(50), " +
-                    "MESSAGE VARCHAR(100))");
+                    "thread_number VARCHAR(50) NOT NULL, " +
+                    "sender VARCHAR(50), " +
+                    "message VARCHAR(100))");
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public void dropTable() throws SQLException {
+        Statement statement = connection.createStatement();
+        statement.execute("DROP TABLE " + Constants.TABLE_NAME);
     }
 
     public void insertIntoMessagesTable() throws SQLException {

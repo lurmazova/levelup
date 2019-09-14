@@ -1,14 +1,13 @@
 package client_server;
 
 import database.DatabaseManager;
-import sun.applet.Main;
+import database.MessagesManager;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -24,15 +23,12 @@ public class Server {
     int clientcount = 0;
     ArrayList<Socket> clientsConnected = new ArrayList<>();
 
-    LinkedHashMap<String, String> fieldsToValues;
-    DatabaseManager databaseManager;
-
     public static void main(String[] args) throws IOException, SQLException {
         Server serverobj = new Server(SERVER_PORT);
         serverobj.startServer();
     }
 
-    Server (int port) throws SQLException {
+    Server (int port) {
         this.port = port;
         pool = Executors.newFixedThreadPool(THREADS_COUNT);
     }
@@ -75,12 +71,10 @@ public class Server {
                     message = reader.readLine();
                     String clientFullMessage = "Client(" + userId + "):" + message + "\n";
                     System.out.print(clientFullMessage);
-
                     broadcastMessages(clientFullMessage);
-                    DatabaseManager dbm = saveMessageToDB("thread " + userId , "client " + userId, clientFullMessage);
-                    searchMessages(dbm, MESSAGE_FIELD, clientFullMessage);
 
                     message = scanner.nextLine();
+
                     if (message.equalsIgnoreCase("bye")) {
                         stream.println("BYE");
                         System.out.println("Connection ended by server");
@@ -94,8 +88,6 @@ public class Server {
             }
             catch(IOException ex) {
                 ex.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
             }
         }
 
@@ -106,26 +98,19 @@ public class Server {
                 BufferedWriter bw = new BufferedWriter(osw);
                 bw.write(clientFullMessage);
                 bw.flush();
+                MessagesManager manager = saveMessageToDB("thread " + userId , "client " + userId, clientFullMessage);
+                listHistory(manager);
             }
         }
 
-        private DatabaseManager saveMessageToDB(String threadNumber, String clientName, String message) throws SQLException {
-            fieldsToValues = new LinkedHashMap<>();
-            fieldsToValues.put(THREAD_NUMBER_FIELD, threadNumber);
-            fieldsToValues.put(CLIENT_NAME_FIELD, clientName);
-            fieldsToValues.put(MESSAGE_FIELD, message);
-            databaseManager = new DatabaseManager(TABLE_NAME, fieldsToValues);
-
-            databaseManager.createTable();
-            databaseManager.insertIntoMessagesTable();
-            return databaseManager;
-
+        private MessagesManager saveMessageToDB(String threadNumber, String clientName, String message) {
+            MessagesManager messages = new MessagesManager();
+            messages.addChatHistoryEntity(message, clientName, threadNumber);
+            return messages;
         }
 
-        private void searchMessages(DatabaseManager databaseManager,  String fieldName, String value) throws SQLException {
-            databaseManager.searchInMessages(fieldName, value);
-            databaseManager.closeConnection();
+        private void listHistory(MessagesManager messagesManager) {
+            messagesManager.listChatHistory();
         }
-
     }
 }

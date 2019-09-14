@@ -14,8 +14,8 @@ public class Constants {
 
     public static final String DB_URL = "jdbc:h2:~/test";
     public static final String TABLE_NAME = "Messages";
-    public static final String THREAD_NUMBER_FIELD = "THREAD_NUMBER";
-    public static final String CLIENT_NAME_FIELD = "CLIENT_NAME";
-    public static final String MESSAGE_FIELD = "MESSAGE";
+//    public static final String THREAD_NUMBER_FIELD = "thread_number";
+//    public static final String CLIENT_NAME_FIELD = "sender";
+//    public static final String MESSAGE_FIELD = "message";
 
 }

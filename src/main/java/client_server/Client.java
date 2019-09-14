@@ -2,7 +2,6 @@ package client_server;
 
 import java.io.*;
 import java.net.*;
-import java.util.Iterator;
 
 import static utils.Constants.SERVER_PORT;
 
