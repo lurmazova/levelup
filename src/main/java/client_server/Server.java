@@ -1,7 +1,6 @@
 package client_server;
 
-import database.DatabaseManager;
-import database.MessagesManager;
+import database.MessageManager;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -98,18 +97,18 @@ public class Server {
                 BufferedWriter bw = new BufferedWriter(osw);
                 bw.write(clientFullMessage);
                 bw.flush();
-                MessagesManager manager = saveMessageToDB("thread " + userId , "client " + userId, clientFullMessage);
+                MessageManager manager = saveMessageToDB("thread " + userId , "client " + userId, clientFullMessage);
                 listHistory(manager);
             }
         }
 
-        private MessagesManager saveMessageToDB(String threadNumber, String clientName, String message) {
-            MessagesManager messages = new MessagesManager();
+        private MessageManager saveMessageToDB(String threadNumber, String clientName, String message) {
+            MessageManager messages = new MessageManager();
             messages.addChatHistoryEntity(message, clientName, threadNumber);
             return messages;
         }
 
-        private void listHistory(MessagesManager messagesManager) {
+        private void listHistory(MessageManager messagesManager) {
             messagesManager.listChatHistory();
         }
     }
