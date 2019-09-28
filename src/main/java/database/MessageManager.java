@@ -40,6 +40,7 @@ public class MessageManager {
             entity.setSender(sender);
             entity.setThreadNumber(thread);
             session.persist(entity);
+            entityID = entity.getId();
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();
@@ -50,7 +51,7 @@ public class MessageManager {
         return entityID;
     }
 
-    public void listChatHistory( ) {
+    public List listChatHistory( ) {
         EntityManager session = entityManagerFactory.createEntityManager();
         try {
             session.getTransaction().begin();
@@ -63,9 +64,11 @@ public class MessageManager {
                 System.out.println("  Thread: " + messagesEntity.getThreadNumber());
             }
             session.getTransaction().commit();
+            return entities;
         } catch (HibernateException e) {
             session.getTransaction().rollback();
             e.printStackTrace();
+            return null;
         } finally {
             session.close();
         }
