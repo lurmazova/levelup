@@ -30,6 +30,7 @@ public class MessagesDAOImpl implements MessagesDAO {
         } catch (HibernateException e) {
             session.getTransaction().rollback();
             e.printStackTrace();
+            throw new HibernateException(e);
         } finally {
             session.close();
         }
@@ -53,6 +54,7 @@ public class MessagesDAOImpl implements MessagesDAO {
         } catch (HibernateException e) {
             session.getTransaction().rollback();
             e.printStackTrace();
+            throw new HibernateException(e);
         } finally {
             session.close();
         }
@@ -69,6 +71,7 @@ public class MessagesDAOImpl implements MessagesDAO {
         } catch (HibernateException e) {
             session.getTransaction().rollback();
             e.printStackTrace();
+            throw new HibernateException(e);
         } finally {
             session.close();
         }
@@ -86,6 +89,7 @@ public class MessagesDAOImpl implements MessagesDAO {
         catch (HibernateException e) {
             session.getTransaction().rollback();
             e.printStackTrace();
+            throw new HibernateException(e);
         }
         finally {
             session.close();

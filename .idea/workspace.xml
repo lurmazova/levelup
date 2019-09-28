@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a55abc5-f2ea-44e6-aa23-e39674bea3ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/MessagesDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MessagesDAOTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/levelup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/levelup.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client_server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client_server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/MessageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client_server/Server$ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client_server/Server$ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client_server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client_server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/MessageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/MessageManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DatabaseTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,8 +109,8 @@
       <file leaf-file-name="MessagesDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+            <state relative-caret-position="393">
+              <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -948,8 +934,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        <state relative-caret-position="393">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
