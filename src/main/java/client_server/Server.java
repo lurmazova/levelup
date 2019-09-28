@@ -1,6 +1,7 @@
 package client_server;
 
-import database.MessageManager;
+import dao.MessagesDAO;
+import impl.MessagesDAOImpl;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -97,18 +98,18 @@ public class Server {
                 BufferedWriter bw = new BufferedWriter(osw);
                 bw.write(clientFullMessage);
                 bw.flush();
-                MessageManager manager = saveMessageToDB("thread " + userId , "client " + userId, clientFullMessage);
+                MessagesDAO manager = saveMessageToDB("thread " + userId , "client " + userId, clientFullMessage);
                 listHistory(manager);
             }
         }
 
-        private MessageManager saveMessageToDB(String threadNumber, String clientName, String message) {
-            MessageManager messages = new MessageManager();
+        private MessagesDAO saveMessageToDB(String threadNumber, String clientName, String message) {
+            MessagesDAO messages = new MessagesDAOImpl();
             messages.addChatHistoryEntity(message, clientName, threadNumber);
             return messages;
         }
 
-        private void listHistory(MessageManager messagesManager) {
+        private void listHistory(MessagesDAO messagesManager) {
             messagesManager.listChatHistory();
         }
     }

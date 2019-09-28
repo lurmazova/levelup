@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a55abc5-f2ea-44e6-aa23-e39674bea3ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DatabaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/MessagesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MessagesDAOTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/levelup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/levelup.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client_server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client_server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/database/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/MessageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/Server$ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client_server/Server$ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client_server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client_server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/MessageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/MessageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DatabaseTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +31,13 @@
       <file leaf-file-name="Messages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/data/Messages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="236">
+              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
                 <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
                 <element signature="e#478#479#0" expanded="true" />
                 <element signature="e#508#509#0" expanded="true" />
                 <element signature="e#554#555#0" expanded="true" />
@@ -44,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/database/MessageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+            <state relative-caret-position="135">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +79,8 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+            <state relative-caret-position="370">
+              <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3774#3775#0" expanded="true" />
@@ -82,17 +93,38 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            <state relative-caret-position="277">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseTests.java">
+      <file leaf-file-name="MessagesDAOTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MessagesDAOTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            <state relative-caret-position="173">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagesDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/MessagesDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagesDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,6 +137,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -114,10 +147,10 @@
       <find>sdf</find>
       <find>acce</find>
       <find>Console</find>
-      <find />
+      <find>Connected users</find>
       <find>Client:</find>
       <find>Server:</find>
-      <find />
+      <find>FROM CHAT_HISTORY</find>
       <find>history1</find>
       <find>CHAT_HI</find>
       <find>messages</find>
@@ -167,13 +200,17 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/client_server/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/MessagesManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/client_server/Server.java" />
         <option value="$PROJECT_DIR$/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/data/Messages.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/client_server/Server.java" />
         <option value="$PROJECT_DIR$/src/test/java/DatabaseTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/MessageManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/database/MessagesDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/Messages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/MessagesDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MessagesDAOTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -212,46 +249,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="multithreading" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="levelup_java2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="levelup" type="b2602c69:ProjectViewProjectNode" />
@@ -302,14 +299,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DatabaseTests">
+  <component name="RunManager">
     <configuration name="MessageManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="database.MessageManager" />
       <module name="levelup" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="database.*" />
+          <option name="PATTERN" value="impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -333,13 +330,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="DatabaseTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MessagesDAOTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="levelup" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DatabaseTests" />
+      <option name="MAIN_CLASS_NAME" value="MessagesDAOTests" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -356,13 +353,13 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DatabaseTests.checkAddChatHistoryEntity" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MessagesDAOTests.checkAddChatHistoryEntity" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="levelup" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DatabaseTests" />
+      <option name="MAIN_CLASS_NAME" value="MessagesDAOTests" />
       <option name="METHOD_NAME" value="checkAddChatHistoryEntity" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -379,13 +376,13 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DatabaseTests.checkAddChatHistoryEntityNumbers" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MessagesDAOTests.checkAddChatHistoryEntityNumbers" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="levelup" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DatabaseTests" />
+      <option name="MAIN_CLASS_NAME" value="MessagesDAOTests" />
       <option name="METHOD_NAME" value="checkAddChatHistoryEntityNumbers" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -402,13 +399,13 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DatabaseTests.checkGetMessagesList" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MessagesDAOTests.checkGetMessagesList" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="levelup" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DatabaseTests" />
+      <option name="MAIN_CLASS_NAME" value="MessagesDAOTests" />
       <option name="METHOD_NAME" value="checkGetMessagesList" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -449,18 +446,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MessageManager" />
-      <item itemvalue="TestNG.DatabaseTests.checkAddChatHistoryEntity" />
-      <item itemvalue="TestNG.DatabaseTests.checkAddChatHistoryEntityNumbers" />
-      <item itemvalue="TestNG.DatabaseTests.checkGetMessagesList" />
-      <item itemvalue="TestNG.DatabaseTests" />
+      <item itemvalue="TestNG.MessagesDAOTests.checkAddChatHistoryEntity" />
+      <item itemvalue="TestNG.MessagesDAOTests.checkAddChatHistoryEntityNumbers" />
+      <item itemvalue="TestNG.MessagesDAOTests.checkGetMessagesList" />
+      <item itemvalue="TestNG.MessagesDAOTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DatabaseTests" />
-        <item itemvalue="TestNG.DatabaseTests.checkGetMessagesList" />
-        <item itemvalue="TestNG.DatabaseTests.checkAddChatHistoryEntityNumbers" />
-        <item itemvalue="TestNG.DatabaseTests.checkAddChatHistoryEntity" />
+        <item itemvalue="TestNG.MessagesDAOTests" />
         <item itemvalue="Application.MessageManager" />
+        <item itemvalue="TestNG.MessagesDAOTests.checkGetMessagesList" />
+        <item itemvalue="TestNG.MessagesDAOTests.checkAddChatHistoryEntityNumbers" />
+        <item itemvalue="TestNG.MessagesDAOTests.checkAddChatHistoryEntity" />
       </list>
     </recent_temporary>
   </component>
@@ -487,6 +484,18 @@
     <history-entry file="DatabaseTests_checkAddChatHistoryEntityNumbers - 2019.09.28 at 14h 43m 30s.xml">
       <configuration name="DatabaseTests.checkAddChatHistoryEntityNumbers" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="DatabaseTests_checkGetMessagesList - 2019.09.28 at 15h 07m 04s.xml">
+      <configuration name="DatabaseTests.checkGetMessagesList" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DatabaseTests - 2019.09.28 at 15h 09m 39s.xml">
+      <configuration name="DatabaseTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MessagesDAOTests - 2019.09.28 at 16h 35m 38s.xml">
+      <configuration name="MessagesDAOTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MessagesDAOTests - 2019.09.28 at 16h 37m 31s.xml">
+      <configuration name="MessagesDAOTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,16 +512,16 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32780084" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3272727" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3151515" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2630303" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
       <window_info anchor="right" id="Perfecto Dashboard" order="5" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32969698" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16523606" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2033195" />
       <window_info anchor="right" id="Perfecto Lab" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -566,19 +575,13 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/database/MessageManager.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/client_server/Server.java</url>
-          <line>98</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -618,23 +621,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -858,18 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3774#3775#0" expanded="true" />
-            <element signature="e#3831#3832#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -881,36 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/Messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -931,20 +875,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/client_server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        <state relative-caret-position="370">
+          <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3774#3775#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/database/MessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+        <state relative-caret-position="135">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MessagesDAOTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/MessagesDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/impl/MessagesDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
